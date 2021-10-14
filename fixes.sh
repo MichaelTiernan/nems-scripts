@@ -653,7 +653,7 @@ if (( $(awk 'BEGIN {print ("'$ver'" >= "'1.5'")}') )); then
       fi
       wget -O /usr/lib/nagios/plugins/check_speedtest-cli.sh https://raw.githubusercontent.com/NEMSLinux/debpack/main/all/nems-plugins/usr/lib/nagios/plugins/check_speedtest-cli.sh
       chmod +x /usr/lib/nagios/plugins/check_speedtest-cli.sh
-      if [ $(dpkg-query -W -f='${Status}' python3-serial 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
+      if [ $(dpkg-query -W -f='${Status}' npm 2>/dev/null | grep -c "ok installed") -eq 0 ]; then
         apt-get install -y npm
       fi
       if [[ ! -e /usr/local/bin/speed-cloudflare-cli ]]; then
