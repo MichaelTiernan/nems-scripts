@@ -1,0 +1,23 @@
+# We ignore this file to prevent including end-user's modifications unless intended with a '-f force' flag.
+*.gitignore
+
+# Crap OS's leave laying around
+*.DS_Store
+
+# Temp files left floating here.
+*.tmp
+*~
+
+# Log files
+*.log
+
+# Lock files
+*.lock
+*.lck
+
+# Files 'set aside' during work.
+*.ignore
+*.orig
+*.hold
+
+# For this specific repo
